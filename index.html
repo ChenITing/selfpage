@@ -3,9 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人網頁</title>
+    <title>CHEN-I-TING</title>
+    <style>
+        html, body{/*邊界等於0*/
+           height:100%;
+           margin: 0px;
+           padding: 0%;
+           background-color: #D5C6E0;
+           background-image: url(image/skyn.png);
+           /*background-color:#1B2F33;*/
+       }
+       div img {    
+	            position: absolute;
+                left: 270px;
+                top: 890px;
+                z-index: 1;  /*設定第一張圖為圖層1*/
+                transition: all 1s;
+                filter:FlipH;
+       }
+       div img:first-child {
+                z-index: 2;    /*設定第二張圖為圖層2*/
+                backface-visibility: hidden; /*隱藏後圖*/
+       }
+       div:hover img{
+                transform: rotateY(180deg);    /*水平翻轉*/
+       }
+ 
+       .img2 {
+	            position: absolute;
+                left: 696px;
+                top: 940px;
+                z-index: 1;
+       }
+       .check1{
+                position: absolute;
+                left: 696px;
+                top:980px;
+                font-size: 30px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .check2{
+                position: absolute;
+                left: 696px;
+                top:1029px;
+                font-size: 30px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .check3{
+                position: absolute;
+                left: 696px;
+                top:1145px;
+       }
+       .txt1{
+                position: absolute;
+                left: 760px;
+                top: 917px;
+                font-size: 40px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .txt2{
+                position: absolute;
+                left: 300px;
+                top: 1325px;
+                font-size: 40px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .txt3{
+                position: absolute;
+                left: 700px;
+                top: 1325px;
+                font-size: 40px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .txt4{
+                position: absolute;
+                left: 300px;
+                top: 1621px;
+                font-size: 40px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .txts1{
+                position: absolute;
+                left:758px;
+                top:985px;
+                font-size: 30px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .txts2{
+                position: absolute;
+                left:758px;
+                top:1035px;
+                font-size: 30px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .txts3{
+                position: absolute;
+                left:756px;
+                top:1137px;
+                font-size: 30px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .fb{
+                position: absolute;
+                left:756px;
+                top:1210px;
+       }
+       .ig{
+                position: absolute;
+                left:896px;
+                top:1221px;
+       }
+       .email{
+                position: absolute;
+                left:1030px;
+                top:1210px;
+       }
+       .hat1{
+                position:absolute;
+                left:300px;
+                top: 1400px;
+                
+       }
+       .ht1{
+                position:absolute;
+                left:365px;
+                top: 1395px;
+                font-size: 30px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .hat2{
+                position:absolute;
+                left:300px;
+                top: 1452px;
+       }
+       .ht2{
+                position:absolute;
+                left:365px;
+                top: 1446px;
+                font-size: 30px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+       .hat3{
+                position:absolute;
+                left:300px;
+                top: 1502px;
+       }
+       .ht3{
+                position:absolute;
+                left:365px;
+                top: 1496px;
+                font-size: 30px;
+                font-family: "微軟正黑體";
+                font-weight:bold;
+       }
+        /* Make sure that padding behaves as expected */
+        * {box-sizing:border-box}
+
+        /* Container for skill bars */
+        .bar1 {
+                width: 30%; /* Full width */
+                height: 30px;
+                background-color:#E0E0E0; /* Grey background */
+                position:absolute;
+                left:780px;
+                top:1430px;
+       }
+       .bar2 {
+                width: 30%; /* Full width */
+                height: 30px;
+                background-color:#E0E0E0; /* Grey background */
+                position:absolute;
+                left:780px;
+                top:1480px;
+       }
+       .bar3 {
+                width: 30%; /* Full width */
+                height: 30px;
+                background-color:#E0E0E0; /* Grey background */
+                position:absolute;
+                left:780px;
+                top:1530px;
+       }
+       .bar4 {
+                width: 30%; /* Full width */
+                height: 30px;
+                background-color:#E0E0E0; /* Grey background */
+                position:absolute;
+                left:780px;
+                top:1580px;
+       }
+
+        .skills {
+                text-align: right; /* Right-align text */
+                padding-top: 10px; /* Add top padding */
+                padding-bottom: 10px; /* Add bottom padding */
+                color: white; /* White text color */
+       }
+
+        .css {width: 85%; height: 30px; background-color:   #D5C6E0;} /* PINK PURPLE BAR*/
+        .html {width: 80%; height: 30px; background-color:#AAA1CB;} /* VIOLET BAR */
+        .java {width: 75%; height: 30px; background-color: #967AA1;} /* DARK PURPLE BAR */
+        .C {width: 65%; height: 30px; background-color:#484891;} /* DARKBLUE BAR */
+
+        .pt1{
+            position: absolute;
+            left:705px;
+            top: 1402px;
+            font-family: "微軟正黑體";
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .pt2{
+            position: absolute;
+            left:693px;
+            top: 1452px;
+            font-family: "微軟正黑體";
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .pt3{
+            position: absolute;
+            left:702px;
+            top: 1502px;
+            font-family: "微軟正黑體";
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .pt4{
+            position: absolute;
+            left:715px;
+            top: 1552px;
+            font-family: "微軟正黑體";
+            font-weight: bold;
+            font-size: 25px;
+        }
+    </style>
 </head>
 <body>
-    網頁測試!
+    <img src="image/sky.png" width="1400" height="662"><br>
+    <img src="image/clipboard.png" width="1408" height="1900">
+    <div><img src="image/photo.png" width="400" height="500"><img src="image/lanjana.png" width="370" height="480"></div>
+    <p class="img2"><img src="image/pin.png" width="50" height="50"></p>
+    <p class="txt1"> 陳依廷 &ensp;CHEN-I-TING</p>
+    <p class="check1"> <img src="image/check.png" width="50" height="50"></p>
+    <p class="txts1">系所:中原大學&emsp;資訊管理學系</p>
+    <p class="check2"> <img src="image/check.png" width="50" height="50"></p>
+    <p class="txts2">輔系:生物醫學工程學系</p>
+    <p class="check3"> <img src="image/check.png" width="50" height="50"></p>
+    <p class="txts3">聯絡資訊</p>
+    <p class="fb"><a href="https://www.facebook.com/liyu.cyc"><img src="image/fb.png" width="90" height="90"></a></p>
+    <p class="ig"><a href="https://www.instagram.com/900630_lanjana/"><img src="image/ig.png" width="70" height="70"></a></p>
+    <p class="email"><a href="mailto:a10250168@gmail"><img src="image/email.png" width="90" height="90"></a></p>
+
+    <p class="txt2">學歷</p>
+    <p class="hat1"><img src="image/hat.png" width="60"></p>
+    <p class="ht1">新北市立成功國小</p>
+    <p class="hat2"><img src="image/hat.png" width="60"></p>
+    <p class="ht2">新北市立鷺江國中</p>
+    <p class="hat3"><img src="image/hat.png" width="60"></p>
+    <p class="ht3">台北市立明倫高中</p>
+
+    <p class="txt3">專業技能</p>
+        <p class="pt1">CSS</p>
+    <div class="bar1">
+      <div class="skills css">85%</div>
+    </div>
+    <p class="pt2">HTML</p>
+    <div class="bar2">
+      <div class="skills html">80%</div>
+    </div>
+    <p class="pt3">Java</p>
+    <div class="bar3">
+      <div class="skills java">75%</div>
+    </div>
+    <p class="pt4">C#</p>
+    <div class="bar4">
+      <div class="skills C">65%</div>
+    </div>
+
+    <div class="txt4">工讀經歷</div>
+    
 </body>
 </html>
