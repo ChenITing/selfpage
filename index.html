@@ -2,270 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHEN-I-TING</title>
+    <title>Document</title>
+    <link href="a.css" rel="stylesheet">
     <style>
-        html, body{/*邊界等於0*/
-           height:100%;
-           margin: 0px;
-           padding: 0%;
-           background-color: #D5C6E0;
-           background-image: url(image/skyn.png);
-           /*background-color:#1B2F33;*/
-       }
-       div img {    
-	            position: absolute;
-                left: 270px;
-                top: 890px;
-                z-index: 1;  /*設定第一張圖為圖層1*/
-                transition: all 1s;
-                filter:FlipH;
-       }
-       div img:first-child {
-                z-index: 2;    /*設定第二張圖為圖層2*/
-                backface-visibility: hidden; /*隱藏後圖*/
-       }
-       div:hover img{
-                transform: rotateY(180deg);    /*水平翻轉*/
-       }
- 
-       .img2 {
-	            position: absolute;
-                left: 696px;
-                top: 940px;
-                z-index: 1;
-       }
-       .check1{
-                position: absolute;
-                left: 696px;
-                top:980px;
-                font-size: 30px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .check2{
-                position: absolute;
-                left: 696px;
-                top:1029px;
-                font-size: 30px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .check3{
-                position: absolute;
-                left: 696px;
-                top:1145px;
-       }
-       .txt1{
-                position: absolute;
-                left: 760px;
-                top: 917px;
-                font-size: 40px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .txt2{
-                position: absolute;
-                left: 300px;
-                top: 1325px;
-                font-size: 40px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .txt3{
-                position: absolute;
-                left: 700px;
-                top: 1325px;
-                font-size: 40px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .txt4{
-                position: absolute;
-                left: 300px;
-                top: 1621px;
-                font-size: 40px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .txts1{
-                position: absolute;
-                left:758px;
-                top:985px;
-                font-size: 30px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .txts2{
-                position: absolute;
-                left:758px;
-                top:1035px;
-                font-size: 30px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .txts3{
-                position: absolute;
-                left:756px;
-                top:1137px;
-                font-size: 30px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .fb{
-                position: absolute;
-                left:756px;
-                top:1210px;
-       }
-       .ig{
-                position: absolute;
-                left:896px;
-                top:1221px;
-       }
-       .email{
-                position: absolute;
-                left:1030px;
-                top:1210px;
-       }
-       .hat1{
-                position:absolute;
-                left:300px;
-                top: 1400px;
-                
-       }
-       .ht1{
-                position:absolute;
-                left:365px;
-                top: 1395px;
-                font-size: 30px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .hat2{
-                position:absolute;
-                left:300px;
-                top: 1452px;
-       }
-       .ht2{
-                position:absolute;
-                left:365px;
-                top: 1446px;
-                font-size: 30px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-       .hat3{
-                position:absolute;
-                left:300px;
-                top: 1502px;
-       }
-       .ht3{
-                position:absolute;
-                left:365px;
-                top: 1496px;
-                font-size: 30px;
-                font-family: "微軟正黑體";
-                font-weight:bold;
-       }
-        /* Make sure that padding behaves as expected */
-        * {box-sizing:border-box}
-
-        /* Container for skill bars */
-        .bar1 {
-                width: 415px; /* Full width */
-                height: 30px;
-                background-color:#E0E0E0; /* Grey background */
-                position:absolute;
-                left:780px;
-                top:1430px;
-       }
-       .bar2 {
-                width: 415px; /* Full width */
-                height: 30px;
-                background-color:#E0E0E0; /* Grey background */
-                position:absolute;
-                left:780px;
-                top:1480px;
-       }
-       .bar3 {
-                width: 415px; /* Full width */
-                height: 30px;
-                background-color:#E0E0E0; /* Grey background */
-                position:absolute;
-                left:780px;
-                top:1530px;
-       }
-       .bar4 {
-                width: 415px; /* Full width */
-                height: 30px;
-                background-color:#E0E0E0; /* Grey background */
-                position:absolute;
-                left:780px;
-                top:1580px;
-       }
-
-        .skills {
-                text-align: right; /* Right-align text */
-                padding-top: 10px; /* Add top padding */
-                padding-bottom: 10px; /* Add bottom padding */
-                color: white; /* White text color */
-       }
-
-        .css {width: 85%; height: 30px; background-color:   #D5C6E0;} /* PINK PURPLE BAR*/
-        .html {width: 80%; height: 30px; background-color:#AAA1CB;} /* VIOLET BAR */
-        .java {width: 75%; height: 30px; background-color: #967AA1;} /* DARK PURPLE BAR */
-        .C {width: 65%; height: 30px; background-color:#484891;} /* DARKBLUE BAR */
-
-        .pt1{
-            position: absolute;
-            left:705px;
-            top: 1402px;
-            font-family: "微軟正黑體";
-            font-weight: bold;
-            font-size: 25px;
-        }
-        .pt2{
-            position: absolute;
-            left:693px;
-            top: 1452px;
-            font-family: "微軟正黑體";
-            font-weight: bold;
-            font-size: 25px;
-        }
-        .pt3{
-            position: absolute;
-            left:702px;
-            top: 1502px;
-            font-family: "微軟正黑體";
-            font-weight: bold;
-            font-size: 25px;
-        }
-        .pt4{
-            position: absolute;
-            left:715px;
-            top: 1552px;
-            font-family: "微軟正黑體";
-            font-weight: bold;
-            font-size: 25px;
-        }
     </style>
 </head>
 <body>
-    <img src="image/sky.png" width="1400" height="662"><br>
-    <img src="image/clipboard.png" width="1408" height="1900">
+	<img src="image/sky.png" width="1400" height="662"><br>
+	<p class="marginc"><img src="image/clipboard.png" width="1430" height="2700"></p>
     <div><img src="image/photo.png" width="400" height="500"><img src="image/lanjana.png" width="370" height="480"></div>
-    <p class="img2"><img src="image/pin.png" width="50" height="50"></p>
-    <p class="txt1"> 陳依廷 &ensp;CHEN-I-TING</p>
-    <p class="check1"> <img src="image/check.png" width="50" height="50"></p>
-    <p class="txts1">系所:中原大學&emsp;資訊管理學系</p>
+	<p class="img2"><img src="image/pin.png" width="50" height="50"></p>
+	<p class="txt1"> 陳依廷 &ensp;CHEN-I-TING</p>
+	<p class="check1"> <img src="image/check.png" width="50" height="50"></p>
+    <p class="txts1">系所:中原大學&thinsp;資訊管理學系</p>
     <p class="check2"> <img src="image/check.png" width="50" height="50"></p>
-    <p class="txts2">輔系:生物醫學工程學系</p>
-    <p class="check3"> <img src="image/check.png" width="50" height="50"></p>
-    <p class="txts3">聯絡資訊</p>
-    <p class="fb"><a href="https://www.facebook.com/liyu.cyc"><img src="image/fb.png" width="90" height="90"></a></p>
-    <p class="ig"><a href="https://www.instagram.com/900630_lanjana/"><img src="image/ig.png" width="70" height="70"></a></p>
-    <p class="email"><a href="mailto:a10250168@gmail"><img src="image/email.png" width="90" height="90"></a></p>
-
+	<p class="txts2">輔系:生物醫學工程學系</p>
+	<p class="check3"> <img src="image/check.png" width="50" height="50"></p>
+	<p class="txts3">小夥伴:蜜袋鼯&ensp;妮妮</p>
+    <p class="check4"> <img src="image/check.png" width="50" height="50"></p>
+    <p class="txts4">聯絡資訊</p>
+    <p class="fb"><a href="https://www.facebook.com/liyu.cyc" target="_blank"><img src="image/fb.png" width="90" height="90"></a></p>
+    <p class="ig"><a href="https://www.instagram.com/900630_lanjana/" target="_blank"><img src="image/ig.png" width="70" height="70"></a></p>
+	<p class="email"><a href="mailto:a10250168@gmail"><img src="image/email.png" width="90" height="90"></a></p>
+	
     <p class="txt2">學歷</p>
     <p class="hat1"><img src="image/hat.png" width="60"></p>
     <p class="ht1">新北市立成功國小</p>
@@ -273,26 +32,119 @@
     <p class="ht2">新北市立鷺江國中</p>
     <p class="hat3"><img src="image/hat.png" width="60"></p>
     <p class="ht3">台北市立明倫高中</p>
-
-    <p class="txt3">專業技能</p>
-        <p class="pt1">CSS</p>
-    <div class="bar1">
-      <div class="skills css">85%</div>
-    </div>
-    <p class="pt2">HTML</p>
-    <div class="bar2">
-      <div class="skills html">80%</div>
-    </div>
-    <p class="pt3">Java</p>
-    <div class="bar3">
-      <div class="skills java">75%</div>
-    </div>
-    <p class="pt4">C#</p>
-    <div class="bar4">
-      <div class="skills C">65%</div>
-    </div>
-
-    <div class="txt4">工讀經歷</div>
     
+    <p class="txt3">專業技能</p>
+	<div class="skill1">
+
+        <li><h3>CSS</h3>
+            <span class="bar"><span class="css"></span></span>
+        </li>
+        <li><h3>HTML</h3>
+            <span class="bar"><span class="html"></span></span>
+		</li></div>
+		<div class="skill2">
+        <li><h3>Java</h3>
+            <span class="bar"><span class="java"></span></span>
+        </li>
+        <li><h3>JavaScript</h3>
+            <span class="bar"><span class="js"></span></span>
+        </li>
+	</div>
+	
+	<div class="txt4">工讀經歷</div>
+       <h3 class="box1">
+        <img src="image/1.png" width="400"><img src="image/w1.png" width="400">
+       </h3> 
+       <h4 class="box2">
+         <img src="image/2.png" width="400"><img src="image/w2.png" width="400">
+       </h4> 
+	<div class="txt5">社團及特殊經歷</div>
+
+
+
+
+<section>
+<h1>社團及特殊經歷簡介</h1>
+<br> 
+<h6 class="pt"></h6>
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner">典禮組</div></li>
+		<li class="step step02"><div class="step-inner">黑孩子黑咖啡</div></li>
+		<li class="step step03"><div class="step-inner">伊甸基金會志工</div></li>
+		<li class="step step04"><div class="step-inner">多媒體程式設計</div></li>
+		<li class="step step05"><div class="step-inner">環境服務學習小組長</div></li>
+	</ul>
+	
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>典禮組</h2>
+		<p>我在2016的11月加入典禮組，並一直待到2019年5月，在典禮組當中我擔任司儀並兼任負責人。我們主要負責的工作是協助朝會、重要集會(如:運動會、畢業典禮等...)的頒獎、主持及接待貴賓，另外我們也負責徵選和訓練下一屆的典禮組組員。在這三年中，令我印象最深刻的兩件事分別是我的第一次主持和最後一次主持，第一次主持是在高二時，站在台努力從口中擠出那已背的流程，手腳不自覺得發抖，到現在仍記得那緊張萬分的感覺;而最後一次，則是主持自己的畢業典禮，雖不再感到緊張，卻因過程中多次被學校給畢業生的驚喜感動的紅了眼眶，因此這兩次主持成為我最難忘的回憶。<a href="https://drive.google.com/file/d/1bgqiIRFCdYpjACIeU0R_keTI2cEk1oDy/view?usp=sharing" tabindex="_blank">CLICK HERE TO SEE MORE</a></p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>黑孩子黑咖啡</h2>
+		<p>黑孩子咖啡廳是孩子的書屋下的商店，為了讓台東偏鄉的兒童有個刻後能夠讀書、吃飯、得到的溫暖的地方，陳爸建立了孩子的書屋，而黑孩子咖啡廳則是讓年紀較長的孩子有個學習一技之長的地方。我之所以會接觸到黑孩子黑咖啡廳是由於大一上吳肇銘老師所開設的企業概論課程，老師透過做中學讓我們了解企業的運作模式，同時也能回饋社會，著實是個非常富有意義的課程，也很榮幸能夠幫助黑孩子咖啡廳販售商品。<a href="https://drive.google.com/file/d/1t9YaBDRmU6npfUT7TWtlctvbXP5b_XQG/view?usp=sharing" target="_blank">CLICK HERE TO SEE MORE</a></p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>伊甸基金會志工</h2>
+		<p>伊甸基金會的一日視障志工，是我第一次當志工，由於大一下上管理學課程，我們需要選擇一個社會福利機構進行服務，因此家都住在北部的組員們共同選擇了報名伊甸基金會的螢回虎山-視障志工，在服務的過程中要協助視障者爬山，雖然對於我們而言虎山算是很平緩的步道，但是對於視障者而言這是個不容易的挑戰，很高興能夠幫助視障者們走出戶外，也讓我了解視障者的不變之處，使我在路上看到單獨在外的視障者時會主動去詢問視障者是否需要引導。<a href="https://drive.google.com/file/d/1N90y5xOT4TFjKrlIaP9kdm8qkFXdPhIb/view?usp=sharing" target="_blank">CLICK HERE TO SEE MORE</a></p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>多媒體程式設計</h2>
+		<p>大二的多媒體課程對我來說很特別，在進入大學前我並未接觸過任何程式設計，因此我是完全零基礎的進到資管系，在大一時學了兩個語言分別是C#和Java，不過我自己並不算是勤學的人除了上課的內容外，自學的東西不算多，因此只能算是稍微會寫一點點程式而已。但是上了大二的多媒體程式設計卻不一樣，除了在上課學習外，還要另外花很多時間搜尋資料、自主學習和應用，雖然過程有點辛苦，不過卻讓我收穫滿滿!!<a href="https://cheniting.github.io/project/" target="_blank">CLICK HERE TO SEE MORE</a></p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>環境服務學習小組長</h2>
+		<p>環境服務學習是中原的學生在大一時一定會經歷的一門課，學校為了讓學生不用另外在校外尋找服務學習，因此開設了服務學習課程，而一門課就需要有一位幫學生評分的人，因此便有了環服小組長，小組長的職責是幫助學生評分、和學生進行溝通交流、分享一些學校及生活資訊及幫助學生完成服務學習。去年我也是在底下聽著小組長上課的學生，而今年我成為了小組長，在過去一年的環服課中，我看到了兩位小組長的用希望能用心和熱情，因此促使我加入環服這個溫暖的家庭，希望能讓更多學生也能看見環服的好。</p>
+	</div>
+	</div>
+</div>
+</h6></section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
 </body>
 </html>

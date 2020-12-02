@@ -1,0 +1,520 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{/*邊界等於0*/
+  height:100%;
+  margin: 0px;
+  padding: 0%;
+  background-image: url(image/sky1.png);
+  background-repeat: repeat;
+  background-position: 0%;
+  color:black;
+  font-family: "微軟正黑體";
+     }
+section{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "微軟正黑體";
+  position: absolute;
+  top: 2425px;
+  left: 230px;
+}
+div img {    
+  position: absolute;
+  left: 270px;
+  top: 1030px;
+  z-index: 1;  /*設定第一張圖為圖層1*/
+  transition: all 1s;
+  filter:FlipH;
+}
+div img:first-child {
+  z-index: 2;    /*設定第二張圖為圖層2*/
+  backface-visibility: hidden; /*隱藏後圖*/
+}
+div:hover img{
+  transform: rotateY(180deg);    /*水平翻轉*/
+}
+h3 img:first-child {
+  z-index: 2;    /*設定第二張圖為圖層2*/
+  backface-visibility: hidden; /*隱藏後圖*/
+}
+h3:hover img{
+  transform: rotateY(180deg);    /*水平翻轉*/
+}
+.img2 {
+  position: absolute;
+    left: 696px;
+    top: 1091px;
+    z-index: 1;
+}
+.txt1{
+  position: absolute;
+  left: 760px;
+  top: 1091px;
+  font-size: 40px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.txts1{
+  position: absolute;
+  left:758px;
+  top:1172px;
+  font-size: 30px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.txts2{
+  position: absolute;
+  left:758px;
+  top:1240px;
+  font-size: 30px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.txts3{
+  position: absolute;
+  left:756px;
+  top:1312px;
+  font-size: 30px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.txts4{
+  position: absolute;
+  left:756px;
+  top:1385px;
+  font-size: 30px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.txt2{
+  position: absolute;
+  left: 300px;
+  top: 1527px;
+  font-size: 40px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.txt3{
+  position: absolute;
+  left: 700px;
+  top: 1525px;
+  font-size: 40px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.txt4{
+  position: absolute;
+  left: 300px;
+  top: 1885px;
+  font-size: 40px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.txt5{
+  position: absolute;
+  left: 300px;
+  top: 2469px;
+  font-size: 40px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+
+.check1{
+  position: absolute;
+  left: 696px;
+  top:1377px;
+  font-size: 30px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.check2{
+  position: absolute;
+  left: 696px;
+  top:1165px;
+  font-size: 30px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.check3{
+  position: absolute;
+  left: 696px;
+  top:1235px;
+}
+.check4{
+  position: absolute;
+  left: 696px;
+  top:1305px;
+}
+.fb{
+  position: absolute;
+  left:756px;
+  top:1434px;
+}
+.ig{
+  position: absolute;
+  left:896px;
+  top:1443px;
+}
+.email{
+  position: absolute;
+  left:1030px;
+  top:1434px;
+}
+.hat1{
+  position:absolute;
+  left:300px;
+  top: 1740px;
+  
+}
+.ht1{
+  position:absolute;
+  left:365px;
+  top: 1603px;
+  font-size: 30px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.hat2{
+  position:absolute;
+  left:300px;
+  top: 1595px;
+}
+.ht2{
+  position:absolute;
+  left:365px;
+  top: 1674px;
+  font-size: 30px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+.hat3{
+  position:absolute;
+  left:300px;
+  top: 1669px;
+}
+.ht3{
+  position:absolute;
+  left:365px;
+  top: 1747px;
+  font-size: 30px;
+  font-family: "微軟正黑體";
+  font-weight:bold;
+}
+
+
+
+h1{
+  text-align: center;
+}
+h3{
+  margin: 5px;
+}
+
+
+.skill1{
+  color: black;
+  padding: 20px;
+  background-color: rgba(,255,255,255,.2);
+  position: absolute;
+  top: 1550px;
+  left: 650px;
+}
+.skill2{
+  color: black;
+  padding: 20px;
+  background-color: rgba(,255,255,255,.2);
+  position: absolute;
+  left: 950px;
+  top:1550px;
+}
+.skill1 li{
+  list-style: none;
+  margin: 20px;
+  padding: 15px;
+  font-size: 25px;
+}
+.skill2 li{
+  list-style: none;
+  margin: 20px;
+  padding: 15px;
+  font-size: 25px;
+}
+.bar{
+  width: 250px;
+  background: gainsboro;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(71, 101, 202, 0.753)0%, rgb(173, 207, 240)100%);
+}
+.css{
+  width: 85%;
+  animation: css 3s;
+}
+.html{
+  width: 80%;
+  animation: html 3s;
+}
+.java{
+  width: 65%;
+  animation: java 3s;
+}
+.js{
+  width: 25%;
+  animation: js 3s;
+}
+@keyframes css{
+ 0%{
+     width: 0%;
+ }
+ 100%{
+     width: 85%;
+ }
+}
+@keyframes html{
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 80%;
+  }
+}
+@keyframes java{
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 65%;
+  }
+}
+@keyframes js{
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 25%;
+  }
+}
+
+h3 img {    
+  position: absolute;
+  left: 340px;
+  top: 1950px;
+  z-index: 1;  /*設定第一張圖為圖層1*/
+  transition: all 1s;
+  filter:FlipH;
+}
+h3 img:first-child {
+  z-index: 2;    /*設定第二張圖為圖層2*/
+  backface-visibility: hidden; /*隱藏後圖*/
+}
+h3:hover img{
+  transform: rotateY(180deg);    /*水平翻轉*/
+}
+h4 img {    
+  position: absolute;
+  left: 800px;
+  top: 1950px;
+  z-index: 1;  /*設定第一張圖為圖層1*/
+  transition: all 1s;
+  filter:FlipH;
+}
+h4 img:first-child {
+  z-index: 2;    /*設定第二張圖為圖層2*/
+  backface-visibility: hidden; /*隱藏後圖*/
+}
+h4:hover img{
+  transform: rotateY(180deg);    /*水平翻轉*/
+}
+
+h1 {
+     
+color:#333;
+font-weight:700;
+margin-top:125px;	 
+text-align:center;
+text-transform:uppercase;
+letter-spacing:4px;
+line-height:23px;
+}
+
+.process-wrapper {
+margin:auto;
+max-width:1080px;
+}
+
+#progress-bar-container {
+position:relative;
+width:90%;
+margin:auto;
+height:100px;
+margin-top:65px;
+}
+
+#progress-bar-container ul {
+padding:0;
+margin:0;
+padding-top:15px;
+z-index:9999;
+position:absolute;
+width:100%;
+margin-top:-40px
+}
+
+#progress-bar-container li:before {
+content:" ";
+display:block;
+margin:auto;
+width:30px;
+height:30px;
+border-radius:50%;
+border:solid 2px #aaa;
+transition:all ease 0.3s;
+   
+}
+
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+border:solid 2px #fff;
+        
+background: linear-gradient(to right,  	#7D7DFF 0%,rgb(200, 218, 252) 100%); 
+}
+
+#progress-bar-container li {
+list-style:none;
+float:left;
+width:20%;
+text-align:center;
+color:#aaa;
+text-transform:uppercase;
+font-size:11px;
+cursor:pointer;
+font-weight:700;
+transition:all ease 0.2s;
+vertical-align:bottom;
+height:60px;
+position:relative;
+}
+
+#progress-bar-container li .step-inner {
+position:absolute;
+width:100%;
+bottom:0;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "微軟正黑體";
+}
+
+#progress-bar-container li.active, #progress-bar-container li:hover {
+color:#444;
+}
+
+#progress-bar-container li:after {
+content:" ";
+display:block;
+width:6px;
+height:6px;
+background:#777;
+margin:auto;
+border:solid 7px #fff;
+border-radius:50%;
+margin-top:40px;
+box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+transition:all ease 0.2s;
+   
+}
+
+#progress-bar-container li:hover:after {
+background:#555;
+}
+
+#progress-bar-container li.active:after {
+background:#207893;
+}
+
+#progress-bar-container #line {
+width:80%;
+margin:auto;
+background: #eee;
+height:6px;
+position:absolute;
+left:10%;
+top:57px;
+z-index:1;
+border-radius:50px;
+transition:all ease 0.9s;
+}
+
+#progress-bar-container #line-progress {
+content:" ";
+width:3%;
+height:100%;
+background: #207893;	 
+background: linear-gradient(to right, #207893 0%,#2ea3b7 100%); 
+position:absolute;
+z-index:2;
+border-radius:50px;
+transition:all ease 0.9s;
+}
+
+#progress-content-section {
+width:90%;
+margin: auto;
+background: #f3f3f3;
+border-radius: 4px;
+}
+
+#progress-content-section .section-content {
+padding:30px 40px;
+text-align:center;
+}
+
+#progress-content-section .section-content h2 {
+font-size:17px;
+text-transform:uppercase;
+color:#333;
+letter-spacing:1px;
+}
+
+#progress-content-section .section-content p {
+font-size:16px;
+line-height:1.8em;
+color:#777;
+}
+
+#progress-content-section .section-content {
+display:none;
+animation: FadeInUp 700ms ease 1;
+animation-fill-mode:forwards;
+transform:translateY(15px);
+opacity:0;
+}
+
+#progress-content-section .section-content.active {
+display:block;
+}
+
+@keyframes FadeInUp {
+0% {
+  transform:translateY(15px);
+  opacity:0;
+}
+
+100% {
+  transform:translateY(0px);
+  opacity:1;
+}
+}
