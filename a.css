@@ -3,9 +3,7 @@
   padding: 0;
 }
 body{/*邊界等於0*/
-  height:100%;
-  margin: 0px;
-  padding: 0%;
+  background-size: cover;
   background-image: url(image/sky1.png);
   background-repeat: repeat;
   background-position: 0%;
